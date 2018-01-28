@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+SQLighter	../SQLighter.py	/^class SQLighter:$/;"	kind:class	line:4
+SQLighter.py	../SQLighter.py	1;"	kind:file	line:1
+__init__	../SQLighter.py	/^    def __init__(self, db):$/;"	kind:member	line:5
+bot	../bot.py	/^bot = telebot.TeleBot(config.token)$/;"	kind:variable	line:10
+bot.py	../bot.py	1;"	kind:file	line:1
+checkout	../bot.py	/^def checkout(pre_checkout_query):$/;"	kind:function	line:68
+close	../SQLighter.py	/^    def close(self):$/;"	kind:member	line:26
+config.py	../config.py	1;"	kind:file	line:1
+count_rows	../SQLighter.py	/^    def count_rows(self):$/;"	kind:member	line:21
+count_rows	../utils.py	/^def count_rows():$/;"	kind:function	line:7
+db_name	../config.py	/^db_name = 'users.db'$/;"	kind:variable	line:3
+get_rows_count	../utils.py	/^def get_rows_count():$/;"	kind:function	line:13
+got_payment	../bot.py	/^def got_payment(m):$/;"	kind:function	line:75
+handle_child_menu	../bot.py	/^def handle_child_menu(m):$/;"	kind:function	line:29
+record_user	../SQLighter.py	/^    def record_user(id, amount):$/;"	kind:member	line:13
+response_go	../bot.py	/^def response_go(m):$/;"	kind:function	line:14
+select_all	../SQLighter.py	/^    def select_all(self):$/;"	kind:member	line:9
+select_single	../SQLighter.py	/^    def select_single(self, rownum):$/;"	kind:member	line:17
+selected_main_menu	../bot.py	/^def selected_main_menu(m):$/;"	kind:function	line:20
+set_user_game	../utils.py	/^def set_user_game(chat_id, estimated_answer):$/;"	kind:function	line:18
+shelve_name	../config.py	/^shelve_name = 'shelve.db'/;"	kind:variable	line:4
+to_up_ballance	../bot.py	/^def to_up_ballance(m):$/;"	kind:function	line:45
+token	../config.py	/^token = "500133606:AAGGOTIYPDyMBQSpwrJidAVMH864O6hnm_g"$/;"	kind:variable	line:1
+user	../bot.py	/^user = bot.get_me()$/;"	kind:variable	line:11
+utils.py	../utils.py	1;"	kind:file	line:1
+ya_token	../config.py	/^ya_token = "381764678:TEST:3194"$/;"	kind:variable	line:2
