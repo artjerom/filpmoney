@@ -15,10 +15,9 @@ fakeMoney = 0
 def response_go(m):
     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
     keyboard.add(*[types.KeyboardButton(name) for name in ['Играть', 'Баланс']])
-    time.sleep(1)
     msg = bot.send_message(m.chat.id, 'Начнем', reply_markup=keyboard)
-    bot.register_next_step_handler(msg, selected_main_menu)
 
+@bot.message_handler(func=lambda message: True)
 def selected_main_menu(m):
     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
     if m.text == 'Играть':
@@ -91,5 +90,4 @@ def got_payment(m):
     bot.send_message(m.chat.id, 'Платеж подтвержден. Деньги поступят на ваш счет в течение 10 минут. Удачной игры!')
     response_go(m)
 
-if __name__ == '__main__':
-    bot.polling(none_stop=True)
+bot.polling()
