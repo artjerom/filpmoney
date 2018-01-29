@@ -4,6 +4,7 @@ import telebot
 import config
 import random
 from telebot import types
+import time
 
 bot = telebot.TeleBot(config.token)
 user = bot.get_me()
@@ -14,6 +15,7 @@ fakeMoney = 0
 def response_go(m):
     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
     keyboard.add(*[types.KeyboardButton(name) for name in ['Играть', 'Баланс']])
+    time.sleep(1)
     msg = bot.send_message(m.chat.id, 'Начнем', reply_markup=keyboard)
     bot.register_next_step_handler(msg, selected_main_menu)
 
